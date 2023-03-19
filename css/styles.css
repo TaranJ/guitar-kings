@@ -42,10 +42,36 @@ header a {
   background-color: #e8e8e8;
 }
 
+.reviews_images {
+  border-radius: 50%;
+}
+
 .featured-products {
   background-color: #fbfbfb;
 }
 
 .cta-sale {
   background-color: #127300;
+}
+
+.welcome {
+  background-image: url("/images/home-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.selling-points_images {
+  border-radius: 100px;
+  max-width: 100%;
+}
+
+/* Contact page */
+input,
+select,
+textarea {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
 }
