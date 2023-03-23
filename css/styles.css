@@ -18,14 +18,23 @@ h2,
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
+}
+
 header,
 footer {
   background-color: #202020;
   color: #fff;
 }
 
-footer {
-  text-align: center;
+/* Links */
+a {
+  text-decoration: none;
 }
 
 header a {
@@ -38,12 +47,12 @@ header a {
   font-size: 1.5em;
 }
 
-.reviews {
-  background-color: #e8e8e8;
+.active {
+  text-decoration: underline;
 }
 
-.reviews_images {
-  border-radius: 50%;
+.reviews {
+  background-color: #e8e8e8;
 }
 
 .featured-products {
@@ -54,6 +63,11 @@ header a {
   background-color: #127300;
 }
 
+footer {
+  text-align: center;
+}
+
+/* Home Page */
 .welcome {
   background-image: url("/images/home-header.jpg");
   background-size: cover;
@@ -65,7 +79,10 @@ header a {
 
 .selling-points_images {
   border-radius: 100px;
-  max-width: 100%;
+}
+
+.reviews_images {
+  border-radius: 50%;
 }
 
 /* Contact page */
