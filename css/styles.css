@@ -10,8 +10,7 @@ body {
 h1,
 h2,
 .logo {
-  font-family: "Boots And Spurs", "Segoe UI", Tahoma, Geneva, Verdana,
-    sans-serif;
+  font-family: "Boots And Spurs", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .product-list h2 {
@@ -151,10 +150,64 @@ select,
 textarea {
   border: 1px solid #c4c4c4;
   border-radius: 5px;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
 }
 
-form {
+textarea {
+  height: 65%;
+}
+
+.form-wrapper {
+  display: flex;
+  text-align: left;
+  margin: 50px;
+}
+
+.form-wrapper > * {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+
+.contact {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Product Specific Page */
+.product-specific {
+  display: flex;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.product-specific > * {
+  flex: 1;
+}
+
+.product-specific__details {
+  padding: 0px 30px;
+}
+
+.product-specific__details a {
+  display: block;
+  width: 96px;
+  margin: auto;
+  white-space: nowrap;
+}
+
+.product-specific__price {
+  font-size: 1.5em;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-image__thumbnail {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
 }
