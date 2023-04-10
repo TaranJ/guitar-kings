@@ -77,6 +77,30 @@ header a {
   font-size: 1em;
   border-radius: 5px;
   text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.cta:before {
+  content: "";
+  padding: 10px;
+  background: #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  height: 100px;
+  top: -40px;
+  left: -100px;
+  transition: left ease-in-out 1s;
+  opacity: 0.3;
+}
+
+.cta:hover:before {
+  left: 110%;
+}
+
+.cta:hover {
+  transform: rotate(10%);
 }
 
 .cta-large {
@@ -303,6 +327,17 @@ textarea {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
+  animation: reveal 1s;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
 }
 
 .products img {
