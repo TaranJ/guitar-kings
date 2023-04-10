@@ -1,0 +1,21 @@
+.guitars {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  animation: reveal 1s;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
